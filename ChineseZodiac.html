@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Chinese Zodiac</title>
+    <script>
+      function animalFinder()
+      {
+        var year = document.getElementById("year").value;
+        if (year % 12 == 0)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'monkey.png'>";
+        }
+        if (year % 12 == 1)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'rooster.png'>";
+        }
+        if (year % 12 == 2)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'dog.png'>";
+        }
+        if (year % 12 == 3)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'pig.png'>";
+        }
+        if (year % 12 == 4)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'rat.png'>";
+        }
+        if (year % 12 == 5)
+        {
+          document.getElementById("pic").innerHTML = "<img src = '0x.png'>";
+        }
+        if (year % 12 == 6)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'Tiger.png'>";
+        }
+        if (year % 12 == 7)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'rabbit.png'>";
+        }
+        if (year % 12 == 8)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'Dragon.png'>";
+        }
+        if (year % 12 == 9)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'Snake.png'>";
+        }
+        if (year % 12 == 10)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'horse.png'>";
+        }
+        if (year % 12 == 11)
+        {
+          document.getElementById("pic").innerHTML = "<img src = 'goat.png'>";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="ChineseZodiac.css">
+  </head>
+
+  <body>
+    <h1 id= "title">Chinese Zodiac</h1>
+    <input type="text" id="year" value="Type Birth Year">
+    <input id="button" type="button" value="Enter" onclick="animalFinder()">
+    <br>
+    <span id="pic"></span>
+  </body>
+</html>

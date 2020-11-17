@@ -1,0 +1,23 @@
+body {
+  background-color: #DAA520;
+}
+
+#title {
+  color: red;
+  font-size: 40px;
+}
+
+#title {
+    animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    50%{    color: black;}
+    100%{   color: red;    }
+}
+
+#button {
+  background-color: black;
+  font-size: 16px;
+  color: yellow;
+}
